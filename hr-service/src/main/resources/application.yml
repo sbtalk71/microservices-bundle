@@ -1,6 +1,6 @@
 server:
   port: 8580
-  address: theta
+  #address: theta
 spring:
   application:
    name: hr-service
