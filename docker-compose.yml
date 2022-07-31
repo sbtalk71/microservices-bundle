@@ -9,7 +9,7 @@ services:
     - 8761:8761 
   emp-service:
     image: emp-microservice:1.0
-    container_name: emp-service
+    #container_name: emp-service
     ports:
     - "8180"
     environment:
@@ -20,7 +20,7 @@ services:
         - eureka-server
   dept-service:
     image: dept-microservice:1.0
-    container_name: dept-service
+    #container_name: dept-service
     ports:
     - "8480"
     environment:
@@ -32,7 +32,7 @@ services:
         
   hr-service:
     image: hr-service:1.0
-    container_name: hr-service
+    #container_name: hr-service
     ports:
     - "8580"
     environment:
@@ -44,7 +44,7 @@ services:
         
   gateway-service:
     image: gateway-microservice:1.0
-    container_name: gateway-service
+    #container_name: gateway-service
     ports:
     - "9090:9000"
     environment:
